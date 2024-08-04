@@ -1,0 +1,44 @@
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #ddd;
+    font-family:"josefin sans", sans-serif;
+}
+.form-container{
+    background-color: #fff;
+    width: 450px;
+    padding: 2rem;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.5);
+    border-radius: 5px;
+
+}
+.login>form{
+    margin: 2rem 0;
+}
+.form-control{
+    position: relative;
+}
+.form-control{
+    width: 100%;
+    border: 1px solid #ddd;
+    font-size: 1.2rem;
+    padding: 0.7rem 0.5rem;
+    margin-bottom: 1rem;
+    border-radius: 5px;
+
+}
+.loginbtn{
+    width: 100%;
+    background-color: slateblue;
+    outline: none;
+    border: none;
+    margin-top: 1rem;
+    font-size: 1.2rem;
+    border-radius: 30px;
+    cursor: pointer;
+    color:#fff;
+    padding:0.5rem 0;
+
+ }
