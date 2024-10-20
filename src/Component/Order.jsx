@@ -1,8 +1,14 @@
 import React from 'react'
+import Category from './Category'
 
 function Order() {
   return (
-    <div>Order</div>
+    <div className='container section order'>
+      <h2 className='ml-50px'>
+        Category
+      </h2>
+        <Category/>
+    </div>
   )
 }
 

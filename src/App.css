@@ -1,44 +1,248 @@
-body{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    min-height: 100vh;
-    background-color: #ddd;
-    font-family:"josefin sans", sans-serif;
+body {
+  background-color: #ffffff;
 }
-.form-container{
-    background-color: #fff;
-    width: 450px;
-    padding: 2rem;
-    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.5);
-    border-radius: 5px;
+
+.section {
+  padding-top: 70px;
+  padding-bottom: 70px;
+}
+
+#login {
+  margin-left: auto;
+  margin-right: auto;
+  align-items: center;
+  font-family: "josefin sans", sans-serif;
+}
+#login {
+  background-color: #fff;
+  width: 450px;
+  padding: 2rem;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.5);
+  border-radius: 5px;
+}
+#login > form {
+  margin: 2rem 0;
+}
+
+.form-control {
+  width: 100%;
+  border: 1px solid #ddd;
+  font-size: 1.2rem;
+  padding: 0.7rem 0.5rem;
+  margin-bottom: 1rem;
+  border-radius: 5px;
+}
+.loginbtn {
+  width: 100%;
+  background-color: #734060;
+  outline: none;
+  border: none;
+  margin-top: 1rem;
+  font-size: 1.2rem;
+  border-radius: 30px;
+  cursor: pointer;
+  color: #fff;
+  padding: 0.5rem 0;
+}
+
+/* aboutsection */
+#aboutSection{
+  font-family: "Playfair Display", serif;
 
 }
-.login>form{
-    margin: 2rem 0;
+#aboutSection h2{
+  font-family: "Playfair Display", serif;
+  text-align: center;
+  font-weight: bold;
+  color: #734060;
+  text-decoration: underline;
+  padding: 2px;
 }
-.form-control{
-    position: relative;
+#aboutContent {
+  background-image: url('./assets/about.jpg');
+  background-size: cover;
+  min-height: 500px;
+  max-height: 600px;
+  border-radius: 10px;
+  box-shadow: rgb(186, 77, 18) 0px 20px 30px -10px;
+  margin-top: 50px;
 }
-.form-control{
-    width: 100%;
-    border: 1px solid #ddd;
-    font-size: 1.2rem;
-    padding: 0.7rem 0.5rem;
-    margin-bottom: 1rem;
-    border-radius: 5px;
+
+#aboutContent p{
+ color:#ffffff;
+ margin-left: 500px;
+ padding: 50px;
+ font-size: 21px;
+}
+
+/* category */
+#category {
+  border: 1px solid #ddd;
+}
+#categoryBtn {
+  border: none;
+  border-radius: 15px;
+  background-color: #ccb7c4;
+}
+#catImg {
+  flex: 1;
+  resize: "stretch";
+}
+/* Dahboard */
+
+#dashboard {
+  font-family: "Playfair Display", serif;
+  background-color: #f7f7f7;
+  margin: auto;
+  padding: 10px;
+}
+
+/* order */
+.order {
+  display: content;
+  background-color: #f7f7f7;
+  font-family: "Playfair Display", serif;
+  font-weight: bold;
+}
+.categoryOrder {
+  margin: 20px;
+}
+
+/* Main menu */
+#menuRow{
+  width: 70%;
+  min-height: 200px;
+  max-height: 300px;
+  border:none;
+  border:none;
+  padding: 10px;
+  margin: 10px;
+ 
 
 }
-.loginbtn{
-    width: 100%;
-    background-color: slateblue;
-    outline: none;
-    border: none;
-    margin-top: 1rem;
-    font-size: 1.2rem;
-    border-radius: 30px;
-    cursor: pointer;
-    color:#fff;
-    padding:0.5rem 0;
+#mainMenu {
+  background-color: #f7f7f7;
+  border:none ;
 
- }
+}
+#mainMenu h3 {
+  color: #734060;
+  font-size: 32px;
+  font-family: "Playfair Display", serif;
+
+}
+/* Menu */
+.menu {
+  display: flex;
+  padding: 10px;
+  margin: 40px;
+  background-color: #f7f7f7;
+  border-radius: 20px;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
+}
+
+.menuItem {
+  border: none;
+ 
+}
+
+.menuinfo {
+  margin-top: 20px;
+}
+.menuItemImg {
+  margin: 10px;
+  flex: 1;
+  resize: "stretch";
+  width: 300px;
+}
+#menuContent {
+  padding: 5px;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
+
+}
+.menuContent > b {
+  font-size: medium;
+}
+.vegnonvegIcon {
+  width: 30px;
+}
+.menuBtn {
+  margin-left: 120px;
+}
+
+/* footer */
+
+#footer {
+  color: #734060;
+  background-color: #734060;
+}
+#footerContent {
+  font-family: "Nunito Sans", sans-serif;
+  color: #ffffff;
+}
+
+#footerLogo img {
+  padding: 5px;
+  display: inline-block;
+}
+
+#footerDes {
+  font-family: "Nunito Sans", system-ui;
+}
+
+/* cover */
+.cover {
+  background: url("./assets/coverimage.jpg") no-repeat 0 0;
+  background-size: cover;
+  border-radius: 10px;
+  box-shadow: rgb(186, 77, 18) 0px 20px 30px -10px;
+}
+#coverHeading {
+  padding: 40px;
+  color: #fff;
+}
+#coverHeading button {
+  background-color: #734060;
+  color: #ffffff;
+  border: none;
+  border-radius: 5px;
+  width: 150px;
+  padding: 10px;
+  margin: 20px;
+}
+
+#coverImg img {
+  background-color: #f7f7f7;
+  border-radius: 20px;
+  height: 400px;
+  width: 400px;
+}
+
+/* #catImage{
+  width:100%;
+  margin-bottom: 10px;
+} */
+
+.category {
+  border: none;
+}
+
+#cardcontent {
+  text-align: center;
+  font-size: 24px;
+  text-decoration: none;
+  background-color: #f7f7f7;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset,
+    rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
+  /* box-shadow: rgba(6, 24, 44, 0.4) 0px 0px 0px 2px, rgba(6, 24, 44, 0.65) 0px 4px 6px -1px, rgba(255, 255, 255, 0.08) 0px 1px 0px inset; */
+}
+
+#cardcontent a {
+  text-decoration: none;
+  /* font-family: "Nunito Sans", system-ui; */
+  font-family: "Playfair Display", serif;
+  font-weight: bold;
+  color: #000;
+  display: inline-block;
+  background-color: #ccb7c4;
+}

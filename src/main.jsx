@@ -9,16 +9,25 @@ import Bill from './Component/Bill.jsx';
 import Signup from './Component/Signup.jsx'
 import Home from './Component/Home.jsx'
 import { LoginProvider } from './Context/LoginContext.jsx'
-
+import Dashboard from './Component/Dashboard.jsx'
+import Menu from './Component/Menu.jsx'
+import MenuItem from './Component/MenuItem.jsx'
+import About from './Component/About.jsx'
 const router = createBrowserRouter(
   createRoutesFromElements(
     <Route path='/' element={<App />}>
-      <Route path="" element={<Home />} />
-      <Route path="home" element={<Home />} />
+      <Route path="" element={<Home/>}/>
       <Route path='login' element={<Login />} />
       <Route path='signup' element={<Signup />} />
       <Route path='order' element={<Order />} />
       <Route path='bill' element={<Bill />} />
+      <Route path='dashboard' element={<Dashboard />} />
+      <Route path="menu" element={<Menu/>}/>
+      <Route path="menuitem" element={<MenuItem/>}/>
+      <Route path="about" element={<About/>}/>
+
+      
+
 
     </Route>
   )

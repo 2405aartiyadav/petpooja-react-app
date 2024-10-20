@@ -18,19 +18,19 @@ const LoginProvider = ({ children }) => {
     let logOut = () => {
         setLogedInUser();
         setIsUserLogedIn(false)
-
         toast.error("User loged out");
 
     }
     let logIn = (username, password) => {
-        if (username == "admin" && password == "admin") {
+        if (username =="admin" && password =="admin") {
             setLogedInUser(username);
-            setIsUserLogedIn(true)
-            toast.success("User logged in")
+            setIsUserLogedIn(true);
+            return true;
         }
         else {
-            toast.error("Invalid Username")
-
+            setLogedInUser("");
+            setIsUserLogedIn(false)
+            return false;
         }
 
     }
