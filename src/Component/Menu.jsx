@@ -12,7 +12,8 @@ function Menu() {
   const [menuItem, setMenuItem] = useState([]);
   let url =
     "http://localhost:8090/menu/get-menu-by-category?category=" + categoryData;
-
+    console.log(url);
+    
   // setMenuItem(menudata);
   useEffect(() => {
     axios

@@ -27,7 +27,7 @@ function Category() {
     <div className="container category">
       <div
         className="row row-cols-3 mx-2 my-2
-           d-flex 
+           d-flex  gap-2
            cardItem m-4"
       >
         {catData.map((cat, index) => (
